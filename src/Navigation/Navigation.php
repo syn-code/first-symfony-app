@@ -3,20 +3,23 @@ namespace App\Navigation;
 
 class Navigation
 {
-    public function __invoke(): array
+    /**
+     * @return \string[][]
+     */
+    public function getNavigationLinks(): array
     {
         return [
             [
               'name' => 'home',
-              'url' => 'home',
+              'url' => '/home',
             ],
             [
                 'name' => 'about',
-                'url' => 'about',
+                'url' => '/about',
             ],
             [
                 'name' => 'contact',
-                'url' => 'contact',
+                'url' => '/contact',
             ]
         ];
     }
