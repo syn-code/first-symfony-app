@@ -1,5 +1,7 @@
-{# templates/lucky/number.html.twig #}
 {% extends 'base.html.twig' %}
+{% block navigation_section %}
+    {% include 'navigation.html.twig' %}
+{% endblock %}
 {% block body %}
-    <h1>Your lucky number is {{ number }}</h1>
+    <h1>{{ question }} {{ number }}</h1>
 {% endblock %}
