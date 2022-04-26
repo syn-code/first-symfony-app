@@ -15,9 +15,11 @@
         {% endblock %}
     </head>
     <body>
-    <nav>
-        {% block navigation_section %}{% endblock %}
-    </nav>
-        {% block body %}{% endblock %}
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                {% block navigation_section %}{% endblock %}
+            </nav>
+            {% block body %}{% endblock %}
+        </div>
     </body>
 </html>
